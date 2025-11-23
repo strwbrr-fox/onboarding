@@ -4,7 +4,7 @@ Git hooks that prevent AI indicators from being committed to your repository.
 
 ## What These Hooks Block
 
-The hooks scan for over 100 AI-related patterns including:
+The hooks scan for over AI references including:
 
 - AI tool names (Claude, Cursor, Copilot, ChatGPT, Gemini, etc.)
 - AI-related phrases ("ai-generated", "ai-assisted", "generated with", etc.)
@@ -50,20 +50,13 @@ The hooks scan for over 100 AI-related patterns including:
 - Skips binary files automatically
 - Compatible with bash 3.2+ (macOS default)
 
-### pre-push Hook
-
-- Runs before pushing to remote
-- Final safety check that scans all commits being pushed
-- Checks both commit messages AND file contents
-- Catches anything that might have bypassed earlier hooks
-
 ## Uninstallation
 
 To remove the hooks from a repository:
 
 ```bash
 cd /path/to/your/repo
-rm .git/hooks/commit-msg .git/hooks/pre-commit .git/hooks/pre-push
+rm .git/hooks/commit-msg .git/hooks/pre-commit
 ```
 
 ## Testing

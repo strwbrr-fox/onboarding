@@ -94,7 +94,6 @@ The installer will activate three hooks:
 
 - **commit-msg** - Blocks AI indicators in commit messages
 - **pre-commit** - Blocks AI indicators in staged file contents
-- **pre-push** - Final safety check before pushing to remote
 
 ## 6) Practice Tasks
 
