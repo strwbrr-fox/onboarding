@@ -164,7 +164,7 @@ The git hooks will catch common markers, but please double-check your changes be
 
 ### Completion
 
-Once you have completed the practice tasks, please submit the [onboarding form] (https://forms.gle/SLXdJk3SbjHCYnpd9) with the following artifacts:
+Once you have completed the practice tasks, please submit the [onboarding form](https://forms.gle/SLXdJk3SbjHCYnpd9) with the following artifacts:
 
 - A zipped copy of your `.specstory folder` from this repo.
 - A zipped copy of the `/data` folder from your screen recorder directory.
