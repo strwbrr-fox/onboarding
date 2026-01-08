@@ -38,6 +38,7 @@ specstory_history.zip
 cursor-agent.json
 
 # Claude or Anthropic session caches
+.claude/
 claude_sessions/
 claude_logs/
 claude_cache/
