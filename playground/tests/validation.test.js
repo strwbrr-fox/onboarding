@@ -23,7 +23,7 @@ test("rejects NaN value", () => {
 
 test("rejects unknown conversion type", () => {
   throws(
-    () => convert("volume", 100, "L", "gal"),
+    () => convert(/** @type {any} */("volume"), 100, /** @type {any} */("L"), /** @type {any} */("gal")),
     /unknown.*type/i,
     "Should throw error for unsupported conversion type"
   );
@@ -63,24 +63,24 @@ test("rejects negative Infinity value", () => {
 
 test("rejects unknown temperature unit code", () => {
   throws(
-    () => convert("temperature", 100, "C", "R"),
-    /unsupported.*conversion/i,
+    () => convert("temperature", 100, "C", /** @type {any} */("R")),
+    /invalid.*unit/i,
     "Should throw error for unsupported temperature units"
   );
 });
 
 test("rejects unknown distance unit code", () => {
   throws(
-    () => convert("distance", 100, "km", "xyz"),
-    /unsupported.*conversion/i,
+    () => convert("distance", 100, "km", /** @type {any} */("xyz")),
+    /invalid.*unit/i,
     "Should throw error for unsupported distance units"
   );
 });
 
 test("rejects unknown weight unit code", () => {
   throws(
-    () => convert("weight", 100, "g", "kg"),
-    /unsupported.*conversion/i,
+    () => convert("weight", 100, "g", /** @type {any} */("kg")),
+    /invalid.*unit/i,
     "Should throw error for unsupported weight units"
   );
 });
